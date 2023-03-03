@@ -9,8 +9,8 @@ fun main(args: Array<String>) {
     digitList()
 
     // Invoking askNames()
-    askNames("Florence", "Beth", "Ian")
-    askNames("Bob", "Ruby", "Ada")
+    println(askNames("Florence", "Beth", "Ian"))
+    println(askNames("Bob", "Ruby", "Ada"))
 }
 
 /*
@@ -66,8 +66,8 @@ Question 4
 Create a function that takes in 3 names and returns a string array containing
 all 3 names.
  */
-fun askNames(name1: String, name2: String, name3: String){
-    var nameArray = arrayOf(name1, name2, name3)
-    println(nameArray.contentToString())
 
+fun askNames(name1: String, name2: String, name3: String):String{
+    var nameArray = arrayOf(name1, name2, name3)
+    return nameArray.contentToString()
 }
